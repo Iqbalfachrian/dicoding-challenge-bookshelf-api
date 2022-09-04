@@ -207,12 +207,11 @@ const addBookHandler = (request, h) => {
                     updatedAt,
             };
 
-            const response = h.response({
+            return {
                 status: 'success',
                 message: 'Buku berhasil diperbarui'
-            });
-            response.code(200);
-            return response;
+            };
+
 
         } else {
 
